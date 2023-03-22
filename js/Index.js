@@ -6,12 +6,12 @@ const offsetCharacter = 16;
 const mainCharacter = document.getElementById("mainCharacter");
 const gameWindow = document.getElementById("gameWindow");
 
-gameWindow.onClick = function (e) {
+gameWindow.onclick = function (e) {
     var rect = gameWindow.getBoundingClientRect();
     var x = e.clientX - rect.left;
     var y = e.clientY - rect.top;
-    mainCharacter.style.left - offsetCharacter +"px";
-    mainCharacter.style.top - offsetCharacter +"px";
-    Console.log(x);
+    mainCharacter.style.left = x - offsetCharacter +"px";
+    mainCharacter.style.top = y - offsetCharacter +"px";
+    console.log(x);
     
 };
