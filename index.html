@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,51 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <h1 id="mainTitle"></h1>
     <div id="gameWindow">
+        <!-- Dialog -->
+        <div id="dialogBar" class="Foreground">
+            <div id="setMainDialog">
+                <div id="browBar"></div>
+                <img id="hero" class="Foreground" src="img/eee.png" alt="portrait">
+                <div id="mainCharacterSpeech" class="Foreground speech-bubble"></div>
+
+
+                <div id="counterSpeech" class="Foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="Foreground"
+                    src="img/0x72_DungeonTilesetII_v1.4/0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f3.png"></img>
+            </div>
+        </div>
+
+
         <!-- Foreground -->
+        <div id="object3" class="Foreground">
+            <img id="demon"
+                src="img/0x72_DungeonTilesetII_v1.4/0x72_DungeonTilesetII_v1.4/frames/big_demon_idle_anim_f0.png" alt=""
+                srcset="">
+        </div>
+
         <div id="object1" class="Foreground"></div>
-        <div id="object2" class="Foreground"></div>
+        
 
         <!-- Characterr -->
-        <div id="mainCharacter" class="character" >
-<img src="img/Gif.gif" alt="walking">
-</div>
+        <div id="mainCharacter" class="character">
+            <img src="img/Gif.gif" alt="walking">
+        </div>
         <!-- Background -->
         <div id="tilemap" class="background">
-<img src="img/0x72_DungeonTilesetII_v1.4/0x72_DungeonTilesetII_v1.4/dungeon.png" alt="tilemap 1">
+            <img src="img/0x72_DungeonTilesetII_v1.4/0x72_DungeonTilesetII_v1.4/dungeon.png" alt="tilemap 1">
         </div>
     </div>
     <audio id="characterAudio">
         <source src="audio/scream-noise-142446.mp3" type="audio/mpeg">
     </audio>
 
-<!-- Javascript -->
-<script src="js/Index.js"></script>
+    <!-- Javascript -->
+    <script src="js/Index.js"></script>
 </body>
+
 </html>

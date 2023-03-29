@@ -50,13 +50,58 @@ body{
 #object1{
     top: 320px;
     left: 559px;
-    width: 16px;
+    width: 16px;    
     height: 32px;
 }
 
-#object2{
+
+
+.speech-bubble {
+	background: #ffffff;
+	border-radius: 60px;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+    width: 250px;
+    opacity: 6;
+}
+
+#dialogBar{
+    height: 64px;
+    bottom: 20px;
+}
+
+#browBar{
+    position: absolute;
+    height: 32px;
+    background-color: #442c1c;
+    bottom: -25px;
+    width: 800px;
+}
+
+#object3{
     top: 320px;
     left: 225px;
-    width: 16px;
-    height: 32px;
+}
+
+#counterSpeech{
+    right: 40px; 
+    top: 0px;
+}
+
+
+#counterCharacter{
+    top: 0px;
+    right: 0px;
+}
+
+#mainCharacterSpeech{
+    left: 40px;
+    top: 10px;
+}
+
+#setMainDialog{
+    position: relative;
+    width: 800px;
+    height: 64px;
 }
